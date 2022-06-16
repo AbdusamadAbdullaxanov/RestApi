@@ -23,7 +23,7 @@ start()
 
 @application.get("/")
 def hello():
-    return {"msg": "hello!"}
+    return {"msg": "hello Abdusamad! get yourself farther from Lalisa and laziness"}
 
 
 if __name__ == '__main__':
