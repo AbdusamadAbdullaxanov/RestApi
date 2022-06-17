@@ -4,15 +4,11 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-fastapi = {extras = ["all"], version = "*"}
-requests = "*"
+fastapi = "*"
 sqlalchemy = "*"
-googletrans = "3.1.0a0"
+googletrans = "==3.1.0a0"
+passlib = "*"
 python-jose = "*"
-passlib = {extras = ["bcrypt"], version = "*"}
-psycopg2 = "*"
-alembic = "*"
-strawberry-graphql = "*"
 
 [dev-packages]
 
