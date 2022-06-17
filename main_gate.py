@@ -4,6 +4,7 @@ from posts import router
 from main_output import router as r
 from about_us import app
 from fastapi.middleware.cors import CORSMiddleware
+from googletranslator import apirouter as api
 from models import start
 
 application = FastAPI()
@@ -16,6 +17,7 @@ application.add_middleware(
 )
 application.include_router(route)
 application.include_router(router)
+application.include_router(api)
 application.include_router(r)
 application.include_router(app)
 start()
